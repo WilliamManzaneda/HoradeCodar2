@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    
+    <script>
+
+var valor1 = parseInt(prompt("Digite o primeiro valor: "));
+var valor2 = parseInt(prompt("Digite o segundo valor: "));
+var valor3 = parseInt(prompt("Digite o terceiro valor: "));
+
+var maior;
+
+if (valor1 > valor2 && valor1 > valor3) {
+  maior = valor1;
+} else if (valor2 > valor1 && valor2 > valor3) {
+  maior = valor2;
+} else {
+  maior = valor3;
+}
+
+var menor;
+
+if (valor1 < valor2 && valor1 < valor3) {
+  menor = valor1;
+} else if (valor2 < valor1 && valor2 < valor3) {
+  menor = valor2;
+} else {
+  menor = valor3;
+}
+
+
+var somaDosDoisMaiores = valor1 + valor2 + valor3 - menor - maior;
+
+
+alert("A soma dos 2 maiores valores é: " + somaDosDoisMaiores);
+
+    </script>
+    
+</body>
+</html>

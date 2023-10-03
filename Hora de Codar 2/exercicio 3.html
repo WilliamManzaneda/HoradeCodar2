@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <script>
+
+function calcularMaiorValor() {
+    var valor1 = parseInt(prompt("Digite o primeiro valor:"));
+    var valor2 = parseInt(prompt("Digite o segundo valor:"));
+    var valor3 = parseInt(prompt("Digite o terceiro valor:"));
+
+    if (valor1 > valor2 && valor1 > valor3) {
+        var maiorValor = valor1;
+    } else if (valor2 > valor1 && valor2 > valor3) {
+        var maiorValor = valor2;
+    } else {
+        var maiorValor = valor3;
+    }
+
+    alert("O maior valor é: " + maiorValor);
+}
+
+
+calcularMaiorValor();
+
+    </script>
+</body>
+</html>
